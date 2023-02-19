@@ -1,0 +1,121 @@
+body{				/*background image and size,font style*/
+	font-family: Segoe UI;
+	background-image: url("bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+img {			/*properties of blocks*/
+	width : 80px ;
+	height : 80px ;
+	margin : 5px; ;
+	border-radius : 2px ;
+	box-shadow: -5px 5px 5px #b3b3b3;
+}
+img:hover {
+	cursor: pointer;
+}
+
+h1{				/*game heading*/
+	text-align: center;
+}
+
+.level{			/*level options*/
+	position: absolute;
+	left: 400px;
+	top: 150px;
+}
+
+#boxsmall{		/*first level game box design*/
+	position: absolute;
+	width:400px;
+	left: 400px;
+	top: 100px;
+}
+
+#boxlarge{		/*second level game box design*/
+	position: absolute;
+	width:600px;
+	left: 300px;
+	top: 40px;
+}
+
+#buttons{		/*level buttons*/
+	position: relative;
+	top: 100px;
+}
+
+.btn:hover{
+	cursor: pointer;
+}
+
+#resetsm, #resetbig {	/*reset button style*/
+	height: 35px;
+	width: 80px;
+	font-size: 18px;
+	margin-left: 5px;
+	text-align: center;
+	background-color: #73AD21;
+	border: none;
+	color: white;
+	transition: background-color 0.5s;
+}
+
+#resetsm:hover, #resetbig:hover{
+	cursor: pointer;
+	background-color: #ff8466;
+}
+
+#clicks, #clicksl{		/*click count properties*/
+	text-align: left;
+	float: left;
+	width: 50%;
+	font-size: 20px;
+}
+
+#score, #scorel{		/*score display style*/
+	text-align: right;
+	float: left;
+	width: 50%;
+	font-size: 20px;
+}
+
+.res{					/*reset button style*/
+	width: 100%;
+	float: left;
+}
+
+#btn1, #btn2{			/*level buttons style*/
+	width: 150px;
+	text-align: center;
+	height: 30px;
+	margin: 10px;
+	box-shadow: -5px 5px 5px #b3b3b3;
+	border: none;
+}
+
+.tooltip {				/*tooltip properties for level buttons*/
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px; 
+    opacity: 0;			 /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
